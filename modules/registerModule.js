@@ -43,15 +43,14 @@ module.exports = function (spec) {
 						output.on('close', function () {
 							console.log(archive.pointer() + ' total bytes');
 							console.log('archiver has been finalized and the output file descriptor has closed.')
-							resolve('Success')
-							/* rimraf(path.resolve(__dirname, 'dist/' + _id), function (err) {
+							rimraf(path.resolve(__dirname, 'dist/' + _id), function (err) {
 								if (err) {
 									console.error(err)
 									reject(new Error('Failed to Remove Dir'))
 								} else {
 									resolve('Success')
 								}
-							}) */
+							})
 						})
 						// This event is fired when the data source is drained no matter what was the data source.
 						// It is not part of this library but rather from the NodeJS Stream API.
