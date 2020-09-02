@@ -25,7 +25,7 @@ const module_ = require('./module/index')
 
 /* Use serve static to serve html page */
 // app.use('/core', serveStatic('core', { 'index': ['index.html', 'index.htm'] }))
-app.use('/register', serveStatic('./modules/public', { 'index': ['index.html', 'index.htm'] }))
+app.use('/', serveStatic('./modules/public', { 'index': ['index.html', 'index.htm'] }))
 /* Configuration of the body-parser to get data from POST requests */
 app.use(bodyParser.json({ limit: '4mb', extended: true }))
 app.use(bodyParser.urlencoded({ limit: '4mb', extended: true }))
