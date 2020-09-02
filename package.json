@@ -1,6 +1,6 @@
 {
   "name": "pandayarepo",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Modules Repository for Pandaya+ Device",
   "main": "server.js",
   "scripts": {
