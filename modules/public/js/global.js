@@ -35,7 +35,7 @@
       });
     }
   } catch (err) {
-    console.log(err);
+    console.log('Error', err);
   }
 
   $("#module_register").click(function (evt) {
